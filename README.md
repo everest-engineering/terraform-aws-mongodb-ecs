@@ -15,6 +15,7 @@ This module creates the following resources required for mongo container to be u
 
 This approach creates an ECS task for mongo and runs/manages that task on EC2 instance of provided instance type. This mongo task
 uses a docker plugin called `rexray/ebs` to provision and use EBS volume for persistent storage of mongo container. 
+![Alt text](images/architecture.png)
 
 #### Pros:
 1. Simplified mongo infra management with just Terraform
@@ -59,7 +60,18 @@ module "mongo_ecs_ec2_cluster" {
 }
 ```
 ## Examples
-Find an example of ECS cluster for mongo [here](examples/mongo_cluster.tf)
+Try out the module functionality with an example defined [here](examples/mongo_cluster.tf). We are using [Terragrunt](https://github.com/gruntwork-io/terragrunt) for remote state management. 
+Do [install](https://terragrunt.gruntwork.io/docs/getting-started/install/) it in case you want remote backend for state.
+
+1. Switch to examples directory `cd examples`
+2. Initialize Terraform to download required plugins `terraform init` | `terragrunt init`
+3. Run `plan` to find out all resources that are going to be created `terraform plan` | `terragrunt plan`
+4. Run `apply` to create those resources `terraform apply` | `terragrunt apply`
+5. Make sure to destroy them once you are done exploring `terraform destroy` | `terragrunt destroy`
+
+####Note: 
+1. Make sure to delete the EBS volume manually as `terraform destroy` won't delete it.
+2. If remote state is used then delete the state management resources (S3 bucket and Dynamo table) created by Terragrunt manually.
 ## Inputs
 
 | Name                      | Description                                                            | Type   | Default | Required |
@@ -87,6 +99,15 @@ Find an example of ECS cluster for mongo [here](examples/mongo_cluster.tf)
 |mongo\_instance\_private\_ip | The private `IPV4` address of mongo instance to connect to mongodb                             |
 |mongo\_instance\_public\_ip  | The public `IPV4` address of mongo instance to connect to mongodb (If created in public subnet)|
 
+## Contributing
+We appreciate your help!
+ 
+[Open an issue](https://github.com/everest-engineering/terraform-mongodb-provisioning-ecs/issues/new/choose) or submit a pull request for an enhancement. 
+Browse through the 
+[current open issues](https://github.com/everest-engineering/terraform-mongodb-provisioning-ecs/issues).
+
+## License
+[Apache License 2.0](LICENSE)
 
 ## Authors
 >Talk to us `hi@everest.engineering`.
