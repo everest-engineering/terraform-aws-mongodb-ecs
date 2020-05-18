@@ -107,7 +107,7 @@ Browse through the
 [current open issues](https://github.com/everest-engineering/terraform-mongodb-provisioning-ecs/issues).
 
 ## License
-[Apache License 2.0](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Authors
 >Talk to us `hi@everest.engineering`.
