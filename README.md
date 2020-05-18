@@ -69,7 +69,7 @@ Do [install](https://terragrunt.gruntwork.io/docs/getting-started/install/) it i
 4. Run `apply` to create those resources `terraform apply` | `terragrunt apply`
 5. Make sure to destroy them once you are done exploring `terraform destroy` | `terragrunt destroy`
 
-####Note: 
+#### Note: 
 1. Make sure to delete the EBS volume manually as `terraform destroy` won't delete it.
 2. If remote state is used then delete the state management resources (S3 bucket and Dynamo table) created by Terragrunt manually.
 ## Inputs
