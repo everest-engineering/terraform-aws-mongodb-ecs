@@ -67,6 +67,7 @@ Do [install](https://terragrunt.gruntwork.io/docs/getting-started/install/) it i
 2. Initialize Terraform to download required plugins `terraform init` | `terragrunt init`
 3. Run `plan` to find out all resources that are going to be created `terraform plan` | `terragrunt plan`
 4. Run `apply` to create those resources `terraform apply` | `terragrunt apply`
+6. [Install](https://docs.mongodb.com/manual/mongo/) mongo shell and run `mongo <public_ip>:27017` to access mongodb
 5. Make sure to destroy them once you are done exploring `terraform destroy` | `terragrunt destroy`
 
 #### Note: 

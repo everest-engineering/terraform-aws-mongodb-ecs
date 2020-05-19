@@ -13,12 +13,3 @@ remote_state {
     dynamodb_table = "mongo-terraform-state-lock"
   }
 }
-
-
-
-
-
-
-
-
-

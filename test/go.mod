@@ -1,6 +1,6 @@
 module github.com/everest-engineering/terraform-mongodb-provisioning/mongo-provisoner-ecs
 
-go 1.13
+go 1.14
 
 require (
 	github.com/aws/aws-sdk-go v1.30.23

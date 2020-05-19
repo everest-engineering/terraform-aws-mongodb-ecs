@@ -54,4 +54,3 @@ resource "aws_security_group" "mongo-ecs-security-group" {
 
   tags = local.default_tags
 }
-
