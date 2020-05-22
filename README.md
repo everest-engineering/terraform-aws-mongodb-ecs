@@ -34,6 +34,12 @@ uses a docker plugin called `rexray/ebs` to provision and use EBS volume for per
 Terraform - [0.12.24](https://github.com/hashicorp/terraform/releases/tag/v0.12.24)
 
 Terraform AWS provider version - [2.60](https://github.com/terraform-providers/terraform-provider-aws/releases/tag/v2.60.0)
+
+## Prerequisites
+1. Configure AWS credentials. Refer [this](https://docs.aws.amazon.com/amazonswf/latest/awsrbflowguide/set-up-creds.html) for help.
+2. Make sure that your AWS user has permissions required to create all resources in the diagram
+3. Install Terraform (version mentioned above) from [here](https://learn.hashicorp.com/terraform/getting-started/install.html)
+
 ## Usage
 **Note:**  
 Change the inputs to match your requirement
