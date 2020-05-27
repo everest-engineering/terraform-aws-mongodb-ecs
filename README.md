@@ -1,4 +1,4 @@
-This module is part of a project to simplify the provisioning of MongoDB on AWS cloud using Terraform. You may also wish to consider [one of the other approaches](https://github.com/everest-engineering/terraform-mongodb-provisioning).
+This module is part of a project to simplify the provisioning of MongoDB on AWS cloud using Terraform. You may also wish to consider [one of the other approaches](https://github.com/everest-engineering/terraform-aws-mongodb).
 
 # Terraform module to provision MongoDB using AWS-ECS
 
@@ -109,9 +109,9 @@ Do [install](https://terragrunt.gruntwork.io/docs/getting-started/install/) it i
 ## Contributing
 We appreciate your help!
  
-[Open an issue](https://github.com/everest-engineering/terraform-mongodb-provisioning-ecs/issues/new/choose) or submit a pull request for an enhancement. 
+[Open an issue](https://github.com/everest-engineering/terraform-aws-mongodb-ecs/issues/new/choose) or submit a pull request for an enhancement. 
 Browse through the 
-[current open issues](https://github.com/everest-engineering/terraform-mongodb-provisioning-ecs/issues).
+[current open issues](https://github.com/everest-engineering/terraform-aws-mongodb-ecs/issues).
 
 ## License
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)

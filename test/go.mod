@@ -1,4 +1,4 @@
-module github.com/everest-engineering/terraform-mongodb-provisioning/mongo-provisoner-ecs
+module github.com/everest-engineering/terraform-aws-mongodb/mongo-provisoner-ecs
 
 go 1.14
 
