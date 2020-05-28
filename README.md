@@ -15,7 +15,7 @@ This module creates the following resources required for mongo container to be u
 
 This approach creates an ECS task for mongo and runs/manages that task on EC2 instance of provided instance type. This mongo task
 uses a docker plugin called `rexray/ebs` to provision and use EBS volume for persistent storage of mongo container. 
-![Alt text](images/architecture.png)
+![Architecture](https://github.com/everest-engineering/terraform-aws-mongodb-ecs/blob/master/images/architecture.png?raw=true)
 
 #### Pros:
 1. Simplified mongo infra management with just Terraform
@@ -117,6 +117,6 @@ Browse through the
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Authors
-[![Alt text](images/banner.png)](https://everest.engineering)
+[![Alt text](https://github.com/everest-engineering/terraform-aws-mongodb-ecs/blob/master/images/banner.png?raw=true)](https://everest.engineering)
 
 [![License: EverestEngineering](https://img.shields.io/badge/Copyright%20%C2%A9-EVERESTENGINEERING-blue)](https://everest.engineering)
